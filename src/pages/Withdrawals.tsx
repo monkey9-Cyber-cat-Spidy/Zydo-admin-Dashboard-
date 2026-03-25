@@ -8,7 +8,7 @@ export default function Withdrawals() {
 
   useEffect(() => {
     const unsub = onSnapshot(collection(db, 'withdrawals'), (snapshot) => {
-      const data = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+      const data: any[] = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
       // Sort: Pending first, then by date
       data.sort((a, b) => {
         if (a.status === 'Pending' && b.status !== 'Pending') return -1;

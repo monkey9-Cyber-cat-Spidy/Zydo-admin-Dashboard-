@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { IndianRupee, HandCoins, ArrowDownToLine, ReceiptText } from 'lucide-react';
 import { db } from '../firebase';
 import { collection, onSnapshot, query, where, getDoc, doc } from 'firebase/firestore';
