@@ -36,7 +36,7 @@ export default function Withdrawals() {
 
   return (
     <div>
-      <h1 className="page-title">Friday Withdrawal Approvals</h1>
+      <h1 className="page-title">Wednesday Withdrawal Approvals</h1>
 
       {/* Razorpay Payout Banner */}
       <div className="glass-card" style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
